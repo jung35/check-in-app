@@ -6,7 +6,7 @@ class HomeController extends Controller {
 
 	public function index()
 	{
-		return 'k';
+		return env('DB_HOST');
 	}
 
 }
