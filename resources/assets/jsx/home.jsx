@@ -21,7 +21,7 @@ var App = React.createClass({
     },
 
 	render: function() {
-        var listEvents = this.state.data.events.map(function (eventItem) {
+        var listEvents = this.state.data.map(function (eventItem) {
             return (
                 <div key={eventItem.id} className="col-xs-12 col-sm-6 col-md-4">
                     <a href={"/money/" + eventItem.id}>

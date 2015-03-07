@@ -21,7 +21,7 @@ var App = React.createClass({displayName: "App",
     },
 
 	render: function() {
-        var listEvents = this.state.data.events.map(function (eventItem) {
+        var listEvents = this.state.data.map(function (eventItem) {
             return (
                 React.createElement("div", {key: eventItem.id, className: "col-xs-12 col-sm-6 col-md-4"}, 
                     React.createElement("a", {href: "/money/" + eventItem.id}, 

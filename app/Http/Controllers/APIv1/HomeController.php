@@ -2,11 +2,13 @@
 
 use App\Http\Controllers\Controller;
 
+use App\Models\Event;
+
 class HomeController extends Controller {
 
 	public function index()
 	{
-		return env('DB_HOST');
+		return Event::orderBy('id', 'desc')->get();
 	}
 
 }
