@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers\APIv1;
 
-class MainController extends Controller {
+use App\Http\Controllers\Controller;
+
+class HomeController extends Controller {
 
 	public function index()
 	{

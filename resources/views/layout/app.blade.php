@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>VacStatus @yield('title')</title>
+	<title>Check In App @yield('title')</title>
 	@include('layout.head')
 </head>
 <body>
 	@include('layout.header')
 	
-	@section('content')
-	@show
+	<div class="container">
+		@section('content')
+		@show
+	</div>
 
 	@include('layout.footer')
 
